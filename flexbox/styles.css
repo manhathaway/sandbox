@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#flex-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex-item {
+    background-color: navy;
+    color: white;
+    text-align: center;
+    line-height: 25px;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+}
