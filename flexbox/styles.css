@@ -4,17 +4,49 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: aliceblue;
+    font-family: sans-serif;
+}
+
+#flex-header {
+    width: 100px;
+    margin: 25px auto;
+    text-align: center;
+}
+
 #flex-container {
     display: flex;
-    justify-content: space-around;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    background-color: aliceblue;
 }
 
 .flex-item {
     background-color: navy;
     color: white;
     text-align: center;
-    line-height: 25px;
+    line-height: 50px;
     border-radius: 5px;
-    width: 50px;
-    height: 50px;
+    flex: 1 1 50px;
+    margin: 0 5px;
+}
+
+.flex-item:not(#fi5) {
+    margin-bottom: 5px;
+}
+
+#fi1 {
+}
+
+#fi2 {
+}
+
+#fi3 {
+}
+
+#fi4 {
+}
+
+#fi5 {
 }
