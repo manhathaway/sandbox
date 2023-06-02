@@ -10,16 +10,6 @@ body {
   letter-spacing: 1px;
 }
 
-.container div {
-  border-radius: 5px;
-  display: grid;
-  place-items: center;
-}
-
-.container div p {
-  outline: 1px solid red;
-}
-
 .box {
   grid-area: box;
   background: black;
@@ -71,6 +61,16 @@ body {
   grid-area: i;
   background: darkred;
 }
+.container div p {
+  outline: 1px solid red;
+}
+
+.container div {
+  border-radius: 5px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
 
 .container {
   display: grid;
@@ -78,8 +78,8 @@ body {
   grid-template-rows: repeat(4, 1fr);
   grid-template-areas: 
     "   box   a   b   b   "
-    "   box   c   c   d   "
-    "   box   e   f   f   "
+    "   g     c   c   d   "
+    "   g     e   f   f   "
     "   g     h   h   i   ";
   gap: 10px;
   height: calc(100vh - 20px);

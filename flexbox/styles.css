@@ -9,31 +9,38 @@ body {
     font-family: sans-serif;
 }
 
+#flex-flex-container {
+    display: flex;
+}
+
 #flex-header {
     width: 100px;
     margin: 25px auto;
     text-align: center;
+    outline: 1px solid red;
 }
 
-#flex-container {
+.flex-container {
     display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-start;
+    flex-flow: row nowrap;
     background-color: aliceblue;
+    justify-content: flex-end;
+    align-content: flex-end;
+    justify-items: stretch;
+    align-items: stretch;
+    outline: 1px solid red;
+    width: 100%;
 }
 
 .flex-item {
     background-color: navy;
     color: white;
     text-align: center;
-    line-height: 50px;
     border-radius: 5px;
-    flex: 1 1 50px;
+    flex: 0 0 30px;
     margin: 0 5px;
-}
-
-.flex-item:not(#fi5) {
-    margin-bottom: 5px;
+    height: 25px;
+    outline: 1px solid red;
 }
 
 #fi1 {
