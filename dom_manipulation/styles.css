@@ -1,0 +1,12 @@
+div * {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+    outline: 1px solid red;
+}
+
+div {
+    width: 50vw;
+    margin: 0 auto;
+    outline: 1px solid red;
+}
