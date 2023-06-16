@@ -47,7 +47,7 @@ const body = document.body
 
 const span_container = document.getElementById('span-container')
     span_container.style.margin = '0 auto'
-    span_container.style.width = '100%'
+    span_container.style.width = 'fit-content'
     span_container.style.height = '100%'
     span_container.style.display = 'flex'
     span_container.style.gap = '1vw'
@@ -59,6 +59,19 @@ const spanStyling = (element) => {
     element.style.padding = '5px'
     element.style.borderRadius = '25%'
 }
+
+let spanArr = [];
+let whyHide = ['w', 'h', 'y', 'h', 'i', 'd', 'e'];
+span_container.addEventListener("click", event => {
+  if (event.target.matches("span")) {
+    for (let i = 0; i < 10; i++) {
+      spanArr.push(document.createElement("span"));
+      span_container.appendChild(spanArr[i]);
+      spanStyling(spanArr[i]);
+    };
+    const spanList = Array.from(spanArr);
+    console.log(typeof spanList);
+  }})
 
 const span_container_children = Array.from(span_container.children)
 for (let i = 0; i < span_container_children.length; i++) {
