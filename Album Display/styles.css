@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+#grid-container {
+    display: grid;
+    height: 100%;
+    grid-template-rows: repeat(auto, 1fr);
+    gap: 1vh;
+}
+
+.artist-grid-cell {
+    outline: 1px solid red;
+    display: grid;
+    grid-template-rows: 0.25fr 0.75fr;
+    padding: 20px;
+}
+
+.artist-heading {
+    width: 100%;
+}
+
+.album-grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(250px, 500px));
+    column-gap: 10px;
+    grid-auto-flow: column;
+    height: 100%;
+}
+
+.album-grid-cell {
+    outline: 1px solid blue;
+    padding: 20px;
+}
