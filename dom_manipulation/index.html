@@ -1,19 +1,25 @@
 <!DOCTYPE html>
-
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="script.js" defer></script>
         <title>DOM Manipulation</title>
     </head>
     <body>
-        <div id="span-container">
-            <span>why</span>
-            <span>hide</span>
-            <span>the</span>
-            <span>lie</span>
-        </div>
-        
+        <p id="array-element"></p>
+
+        <script>
+            const globalArray = [];
+            function rangeGlobal(lower, upper) {
+                if (lower == (upper + 1)) {
+                return globalArray;
+                } else {
+                globalArray.push(lower);
+                return rangeGlobal(lower + 1, upper);
+                }
+            }
+            const globalArrayElement = document.querySelector('#array-element');
+            globalArrayElement.innerHTML = rangeGlobal(1, 25);
+        </script>
     </body>
 </html>

@@ -2,7 +2,7 @@
 // Creating an HTML element in JS.
     const div = document.createElement('div')
     body.appendChild(div)
-*/
+/*
 
 /*
 // Adding text to our element.
@@ -39,6 +39,7 @@
     span_hi.style.color = "white"
 */
 
+/*
 const body = document.body
     body.style.margin = '0'
     body.style.padding = '0'
@@ -78,6 +79,7 @@ for (let i = 0; i < span_container_children.length; i++) {
     spanStyling(span_container_children[i])
     console.log(i)
 }
+*/
 
 /*
 'addNums(arr, n)' will be a function that returns the sum of each item in an array, where the arguments signify:
@@ -89,6 +91,7 @@ Note that:
 This is what allows these types of recursion functions to work.
 */
 
+/*
 // We initialize a variable 'box' that we will add each array item to.
 let box = 0;
 const addNums = (arr, n) => {
@@ -104,8 +107,9 @@ const addNums = (arr, n) => {
     }
   }
 console.log(addNums([1, 2, 3, 4, 5], 5));
+*/
 
-
+/*
 // 'rangeGlobal' returns an array with values between and inclusive of arguments 'lower' and 'upper'.
 // This function initializes a global variable 'countArray'.
 const globalArray = [];
@@ -117,8 +121,9 @@ function rangeGlobal(lower, upper) {
       return rangeGlobal(lower + 1, upper);
     }
   }
-console.log(rangeGlobal(1, 10));
+/*
 
+/*
 // 'rangeLocal' does the same thing as 'rangeGlobal' except it doesn't rely on a global variable.
 function rangeLocal(lower, upper) {
     if (lower == (upper + 1)) {
@@ -130,3 +135,4 @@ function rangeLocal(lower, upper) {
     }
   }
 console.log(rangeLocal(1, 10));
+*/
